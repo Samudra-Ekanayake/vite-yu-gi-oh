@@ -1,4 +1,4 @@
-<script setup>
+<script>
 import AppHeader from './components/AppHeader.vue'
 import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
@@ -16,14 +16,12 @@ export default {
   mounted() {
   },
 }
-
-
 </script>
 
 <template>
-  
+
+  <AppHeader />
+
 </template>
 
-<style >
-
-</style>
+<style></style>
