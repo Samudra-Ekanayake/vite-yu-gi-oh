@@ -1,13 +1,19 @@
 <script>
 export default {
 
-    props: { carte: Array },
+    props: {
+         carte: Array 
+        },
 
     data() {return {}},
 
-    methods: { },
+    methods: {
+        
+    },
 
-    mounted() { },
+    mounted() {
+
+     },
 }
 </script>
 
@@ -18,10 +24,10 @@ export default {
     <div class="container-fluid">
         <div class="row">
             <div class="col-10 bg-info">
-                <ul>
+                <ul class="st_image d-flex flex-wrap">
                     <li v-for="element in carte">
                         <img :src="element.card_images[0].image_url" alt="">
-                        <span>{{ element. }}</span>
+                        <span>{{}}</span>
                     </li>
                 </ul>
             </div>
@@ -30,4 +36,8 @@ export default {
 
 </template>
 
-<style></style>
+<style>
+.st_image img {
+    height: 20rem;
+}
+</style>

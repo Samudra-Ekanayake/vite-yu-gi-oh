@@ -1,5 +1,3 @@
-
-
 <script>
 import AppHeader from './components/AppHeader.vue'
 import Main from './components/Main.vue'
@@ -26,7 +24,7 @@ export default {
 
 
   mounted() {
-    axios.get("https://db.ygoprodeck.com/api/v7/cardinfo.php?num=10&offset=0").then((response) => {
+    axios.get("https://db.ygoprodeck.com/api/v7/cardinfo.php?num=4&offset=0").then((response) => {
       console.log(response.data.data);
       this.carte = response.data.data;
     }).catch((error) => {
